@@ -4,11 +4,11 @@
 # SPDX-License-Identifier: MPL-2.0
 #
 name        : p11-kit
-version     : 0.25.5
-release     : 5
+version     : 0.25.8
+release     : 7
 homepage    : https://p11-glue.freedesktop.org
 upstreams   :
-    - https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz: 04d0a86450cdb1be018f26af6699857171a188ac6d5b8c90786a60854e1198e5
+    - https://github.com/p11-glue/p11-kit/releases/download/0.25.8/p11-kit-0.25.8.tar.xz: 2fd4073ee2a47edafaae2c8affa2bcca64e0697f8881f68f580801ef43cab0ce
 summary     : Loads and enumerates PKCS#11 modules
 description : |
    Loads and enumerates PKCS#11 modules
@@ -21,9 +21,10 @@ builddeps   :
     - pkgconfig(libsystemd)
     # cmake(GtkDocConfig)
 setup       : |
-    %meson -Dsystem_config=/usr/share/defaults/pkcs11 \
-           -Duser_config=/etc/pkcs11 \
-           -Dtrust_paths=/etc/ca-certificates/trust-source:/usr/share/ca-certificates/trust-source
+    %meson \
+        -Dsystem_config=/usr/share/defaults/pkcs11 \
+        -Duser_config=/etc/pkcs11 \
+        -Dtrust_paths=/etc/ca-certificates/trust-source:/usr/share/ca-certificates/trust-source
 build       : |
     %meson_build
 install     : |

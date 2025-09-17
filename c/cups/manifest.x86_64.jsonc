@@ -7,6 +7,7 @@
 				"binary(xdg-open)",
 				"libpaper-devel",
 				"pkgconfig(avahi-client)",
+				"pkgconfig(libacl)",
 				"pkgconfig(libcrypt)",
 				"pkgconfig(libssl)",
 				"pkgconfig(libsystemd)",
@@ -16,6 +17,7 @@
 			"depends": [
 				"cups-libs",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"soname(libacl.so.1(x86_64))",
 				"soname(libavahi-client.so.3(x86_64))",
 				"soname(libavahi-common.so.3(x86_64))",
 				"soname(libc++.so.1(x86_64))",
@@ -810,6 +812,7 @@
 				"binary(xdg-open)",
 				"libpaper-devel",
 				"pkgconfig(avahi-client)",
+				"pkgconfig(libacl)",
 				"pkgconfig(libcrypt)",
 				"pkgconfig(libssl)",
 				"pkgconfig(libsystemd)",
@@ -856,6 +859,7 @@
 				"binary(xdg-open)",
 				"libpaper-devel",
 				"pkgconfig(avahi-client)",
+				"pkgconfig(libacl)",
 				"pkgconfig(libcrypt)",
 				"pkgconfig(libssl)",
 				"pkgconfig(libsystemd)",
@@ -900,6 +904,7 @@
 				"binary(xdg-open)",
 				"libpaper-devel",
 				"pkgconfig(avahi-client)",
+				"pkgconfig(libacl)",
 				"pkgconfig(libcrypt)",
 				"pkgconfig(libssl)",
 				"pkgconfig(libsystemd)",
@@ -998,6 +1003,7 @@
 				"binary(xdg-open)",
 				"libpaper-devel",
 				"pkgconfig(avahi-client)",
+				"pkgconfig(libacl)",
 				"pkgconfig(libcrypt)",
 				"pkgconfig(libssl)",
 				"pkgconfig(libsystemd)",
@@ -1029,6 +1035,7 @@
 				"binary(xdg-open)",
 				"libpaper-devel",
 				"pkgconfig(avahi-client)",
+				"pkgconfig(libacl)",
 				"pkgconfig(libcrypt)",
 				"pkgconfig(libssl)",
 				"pkgconfig(libsystemd)",
@@ -1054,6 +1061,7 @@
 				"binary(xdg-open)",
 				"libpaper-devel",
 				"pkgconfig(avahi-client)",
+				"pkgconfig(libacl)",
 				"pkgconfig(libcrypt)",
 				"pkgconfig(libssl)",
 				"pkgconfig(libsystemd)",
@@ -1083,6 +1091,6 @@
 		}
 	},
 	"source-name": "cups",
-	"source-release": "14",
-	"source-version": "2.4.12"
+	"source-release": "16",
+	"source-version": "2.4.14"
 }
